@@ -1,11 +1,11 @@
 ---
 title: "atomic vs nonatomic properties in Objective-C"
-excerpt: "An overview of Dispatch object's life cycle"
+excerpt: "In depth analysis of atomic and nonatomic properties."
 tags: 
   - atomic
   - nonatomic
 modified: 2016-10-25
-comments: false
+comments: true
 categories:
   - Post
 ---

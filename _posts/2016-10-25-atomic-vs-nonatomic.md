@@ -13,7 +13,6 @@ categories:
 
 The difference between atomic and non atomic properties remained a favourite question for interviewers. Today we will analyse these keywords in detail. These keyword define the characteristics of how these properties will behave once they will be accessed from multiple threads simultaneously.
 
-Multi-threading on Single CPU vs Multiple threads
 
 # atomic (Default)
 As the word explains itself, a single thread will be able to access the property at a given time. 
@@ -85,10 +84,11 @@ PROS: Fast as there is no extra code to control access of multiple threads
 Cons: Thread safety is not guaranteed
 
 # TODO
-- [ ] Thread safe vs Read/Write Safe
-- [ ] When is code created for properties i.e how & getter and setter code is created?
-- [ ] When to use atomic vs non-atomic some solid rules?
-- [ ] Detailed Pros & Cons
+- [] Thread safe vs Read/Write Safe
+- [] When is code created for properties i.e how & getter and setter code is created?
+- [] When to use atomic vs non-atomic some solid rules?
+- [] Detailed Pros & Cons
+- [] Multi-threading on Single CPU vs Multiple threads
 
 # Further Reading
 - [TMI #1: Objective-C Property Attributes](https://realm.io/news/tmi-objective-c-property-attributes/)

@@ -48,13 +48,18 @@ This is how the methods of a property will look for an atomic property after
 }
 -(void)setFirstName:(NSString *)firstName{
     @synchronized (self) {
-        _firstName = firstName;
+        if(_firstName != firstName){
+            [_firstName release];
+            _firstName = [firstName retain];
+        }
     }
 }
+~~~
+Note: the Objective-C 2.0 specification, mentions that locks are used internally, but it doesn't specify exactly how. What you see above, is roughly what an atomic getter/setter would look like, but it might not be accurate.
 
-~~~ 
-PROS: Thread safe
-Cons: Slow
+*Pros:* Ensures that user gets a valid value and not some garbage
+
+*Cons:* Slow, as it has code to ensure read write safety
 
 
 
@@ -76,12 +81,16 @@ This is how the methods of a properties will look for an atomic property
     return _firstName;
 }
 -(void)setFirstName:(NSString *)firstName{
-    _firstName = firstName;
+    if(_firstName != firstName){
+        [_firstName release];
+        _firstName = [firstName retain];
+    }
 }
 
 ~~~ 
-PROS: Fast as there is no extra code to control access of multiple threads
-Cons: Thread safety is not guaranteed
+*PROS:* Fast as compared to atomic properties, as there is no extra code to control access of multiple threads
+
+*Cons:* You are not guaranteed whether or not you will receive a valid value
 
 # TODO
 - [] Thread safe vs Read/Write Safe
@@ -94,4 +103,6 @@ Cons: Thread safety is not guaranteed
 - [TMI #1: Objective-C Property Attributes](https://realm.io/news/tmi-objective-c-property-attributes/)
 - [Ry’s Objective-C Tutorial - Properties](http://rypress.com/tutorials/objective-c/properties)
 - [Apple's Docs](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/EncapsulatingData/EncapsulatingData.html)
+- ['Gabriele Petronella's Answer for Explicit getters/setters for @properties (MRC)](http://stackoverflow.com/a/21802205/800848)
+- [Memory and thread-safe custom property methods](http://www.cocoawithlove.com/2009/10/memory-and-thread-safe-custom-property.html)
 

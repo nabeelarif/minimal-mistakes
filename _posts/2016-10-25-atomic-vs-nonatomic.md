@@ -90,6 +90,8 @@ Cons: Thread safety is not guaranteed
 - [ ] When to use atomic vs non-atomic some solid rules?
 - [ ] Detailed Pros & Cons
 
-# Explore in detail
-- [TMI #1: Objective-C Property Attributes] (https://realm.io/news/tmi-objective-c-property-attributes/)
-- [Ry’s Objective-C Tutorial - Properties] (http://rypress.com/tutorials/objective-c/properties)
+# Further Reading
+- [TMI #1: Objective-C Property Attributes](https://realm.io/news/tmi-objective-c-property-attributes/)
+- [Ry’s Objective-C Tutorial - Properties](http://rypress.com/tutorials/objective-c/properties)
+- [Apple's Docs](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/EncapsulatingData/EncapsulatingData.html)
+

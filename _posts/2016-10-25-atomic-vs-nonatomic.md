@@ -15,9 +15,7 @@ The difference between atomic and non atomic properties remained a favourite que
 
 
 # atomic (Default)
-As the word explains itself, a single thread will be able to access the property at a given time. 
-Explanation:
-To explain more, only one thread will be able to access getter/setter of a property. Other threads have to wait until first thread releases get/set method. Let's say we have a property firstName which is atomic. 
+As the word explains itself, a single thread will be able to access the property at a given time. To explain more, only one thread will be able to access getter/setter of a property. Other threads have to wait until first thread releases get/set method. Let's say we have a property firstName which is atomic. 
 
 ~~~ shell
 - Thread A => obj.firstName=@"A"
@@ -88,7 +86,7 @@ This is how the methods of a properties will look for an atomic property
 }
 
 ~~~ 
-*PROS:* Fast as compared to atomic properties, as there is no extra code to control access of multiple threads
+*Pros:* Fast as compared to atomic properties, as there is no extra code to control access of multiple threads
 
 *Cons:* You are not guaranteed whether or not you will receive a valid value
 
@@ -103,6 +101,6 @@ This is how the methods of a properties will look for an atomic property
 - [TMI #1: Objective-C Property Attributes](https://realm.io/news/tmi-objective-c-property-attributes/)
 - [Ry’s Objective-C Tutorial - Properties](http://rypress.com/tutorials/objective-c/properties)
 - [Apple's Docs](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/EncapsulatingData/EncapsulatingData.html)
-- ['Gabriele Petronella's Answer for Explicit getters/setters for @properties (MRC)](http://stackoverflow.com/a/21802205/800848)
+- [Gabriele Petronella's Answer for Explicit getters/setters for @properties (MRC)](http://stackoverflow.com/a/21802205/800848)
 - [Memory and thread-safe custom property methods](http://www.cocoawithlove.com/2009/10/memory-and-thread-safe-custom-property.html)
 

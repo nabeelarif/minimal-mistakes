@@ -12,3 +12,8 @@ I have around 5 years of professional experience in iOS, Android and their commu
 During my education I have performed my best. In BSCS I received the Gold Medal from Prime-minister of Pakistan 'Syed Yousaf Raza Gilani'.
 
 I always like to work on a challenging position in software development to apply and enhance my technical knowledge, interpersonal skills and creative thinking with a keen desire to make substantial and positive impacts towards success of the organization and my own career growth.
+
+# Favorite Blogs
+- [NSHipster](http://nshipster.com)
+- [Cocoa with Love](http://www.cocoawithlove.com)
+- [Natasha The Robot](https://www.natashatherobot.com)

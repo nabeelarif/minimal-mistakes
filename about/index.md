@@ -3,11 +3,11 @@ title: Muhammad Nabeel arif
 tags: 
   - about
   - Muhammad Nabeel Arif 
-  - nabeelarif]
+  - nabeelarif
 modified: 2016-03-14T20:53:07.573882-04:00
 ---
 
-I have around 5 years of professional experience in iOS, Android and their communication with the server side. I develop professional applications some of them are available on AppStore and Google Play Store.
+I have around 6 years of professional experience in iOS, Android and their communication with the server side. I develop professional applications some of them are available on AppStore and Google Play Store.
 
 During my education I have performed my best. In BSCS I received the Gold Medal from Prime-minister of Pakistan 'Syed Yousaf Raza Gilani'.
 

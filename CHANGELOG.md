@@ -1,3 +1,144 @@
+## [4.0.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.9)
+
+### Bug Fixes
+
+- Fix overlapping sidebar navigation lists due to `max-height: 100vh`. [#668](https://github.com/mmistakes/minimal-mistakes/issues/668)
+
+## [4.0.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.8)
+
+### Bug Fixes
+
+- Set default value for `words_per_minute`. [#657](https://github.com/mmistakes/minimal-mistakes/issues/657)
+- Adjust sidebar navigation list CSS so it collapses at the correct width.
+
+### Maintenance
+
+- Add Google AdSense banner to `/docs/_layouts/default.html` for demo site.
+
+## [4.0.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.7)
+
+### Enhancements
+
+- Add `!default` values to **_sass/_variables.scss**.
+- Collapse sidebar navigation lists on smaller screens. [#607](https://github.com/mmistakes/minimal-mistakes/issues/607)
+
+### Bug Fixes
+
+- Rename `#comments` to something more unique to avoid clashes with Kramdown generated headline IDs. [#582](https://github.com/mmistakes/minimal-mistakes/issues/582)
+
+### Maintenance
+
+- Reorganize SCSS partials in **assets/css/main.scss**
+
+## [4.0.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.6)
+
+### Enhancements
+
+- Add [`figure` helper](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#figure) to make generating a `<figure>` element with a single image and caption easier. [#572](https://github.com/mmistakes/minimal-mistakes/pull/572)
+- Add structured data markup for `itemprop="person"` in author profile sidebar. [#647](https://github.com/mmistakes/minimal-mistakes/pull/647)
+
+### Bug Fixes
+
+- Fix improper YAML formatting of some locales. [#651](https://github.com/mmistakes/minimal-mistakes/pull/651)
+
+### Maintenance
+
+- Clarify "migrating to gem-theme" instructions in **Quick Start Guide**. 
+- Add `rake preview` task for testing `/test` during theme development.
+
+## [4.0.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.5)
+
+### Enhancements
+
+- Update gems: `jekyll-sitemap` (0.12), `jekyll-feed` (0.8).
+- Improve next/previous pager links visibility by changing gray color to blue (`$link-color`).
+
+### Bug Fixes
+
+- Fix `.sidebar` flicker/jump when hovered. [#583](https://github.com/mmistakes/minimal-mistakes/issues/583)
+
+### Maintenance
+
+- Move contents of `gh-pages` branch to `master` inside of the `/docs` folder.
+
+## [4.0.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.4)
+
+### Enhancements
+
+- "Gemify" theme ~> `gem "minimal-mistakes-jekyll"`
+- Replace `base_path` include with `absolute_url` filter where possible.
+- Allow images to be placed in other folders. Remove `/images/` only restriction and encourage placement in `/assets/images/` instead. **Full paths are now required. If upgrading from MM 3.4 add `/images/` before filenames in Front Matter and `_config.yml` variables.**
+- Add [home `layout`](https://github.com/mmistakes/minimal-mistakes/blob/master/_layouts/home.html)
+- Added missing Turkish translations for UI text. [#621](https://github.com/mmistakes/minimal-mistakes/pull/621)
+- Make author avatar optional in sidebar.
+- Update **/_includes/seo.html** for meta description. [#558](https://github.com/mmistakes/minimal-mistakes/pull/558)
+
+### Bug Fixes
+
+- Fix navigation bar animation "flicker" in Safari [#568](https://github.com/mmistakes/minimal-mistakes/issues/568)
+- Fix `author.avatar` paths for externally hosted images.
+
+### Maintenance
+
+- Add documentation around `gem "minimal-mistakes-jekyll"` installation and use.
+- Add note about using full image paths for eg. `assets/images/filename.jpg` (header images, overlays, galleries, feature rows, etc.) instead of assuming they will always be in `/images/`.
+- Add "[Overriding Theme Defaults](https://mmistakes.github.io/minimal-mistakes/docs/overriding-theme-defaults/)" page to documentation.
+
+## [3.4.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.8)
+
+### Enhancements
+
+- Improve type readability for larger viewports by bumping up base `font-size`. [#533](https://github.com/mmistakes/minimal-mistakes/issues/533)
+- Update Portuguese localized UI text. [#541](https://github.com/mmistakes/minimal-mistakes/pull/541)
+- Add `page.title` and via parameter to Twitter share link. [#538](https://github.com/mmistakes/minimal-mistakes/pull/538)
+
+### Bug Fixes
+
+- Fix Last.fm author profile URL. [#540](https://github.com/mmistakes/minimal-mistakes/pull/540)
+
+### Maintenance
+
+- Move Brazilian Portuguese localized text under `pt-BR` key.
+
+## [3.4.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.7)
+
+### Enhancements
+
+- Add `layout` based and user-defined class names to `<body>` element for added CSS hooks. [#526](https://github.com/mmistakes/minimal-mistakes/pull/526)
+- Add simplified Chinese localized UI text. [#532](https://github.com/mmistakes/minimal-mistakes/pull/532)
+
+### Bug Fixes
+
+- Remove duplicate include of `base_path` in category-list.html [#522](https://github.com/mmistakes/minimal-mistakes/pull/522)
+
+## [3.4.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.6)
+
+### Enhancements
+
+- Add Italian "comments" related localized UI text. [#514](https://github.com/mmistakes/minimal-mistakes/pull/514)
+
+### Bug Fixes
+
+- Disable `compress` HTML layout by default. To enable add `layout: compress` to `_layouts/default.html`.
+
+## [3.4.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.5)
+
+### Enhancements
+
+- Improve line numbered code block styling when using `{% highlight linenos %}` tag. [#513](https://github.com/mmistakes/minimal-mistakes/issues/513)
+- Add English fallback to "Follow" button label. [#496](https://github.com/mmistakes/minimal-mistakes/pull/496)
+
+### Bug Fixes
+
+- Fix Firefox alignment issues with code blocks generated with the `{% highlight %}` tag. [#512](https://github.com/mmistakes/minimal-mistakes/issues/512)
+
+### Maintenance
+
+- Clarified comment for `author.stackoverflow` value used in author sidebar links. [#487](https://github.com/mmistakes/minimal-mistakes/pull/487)
+- Add list of localized text strings. [#488](https://github.com/mmistakes/minimal-mistakes/pull/488)
+- Add `{% highlight %}` code block examples to demo site.
+- Add documentation for using custom sidebar navigation menus. [#476](https://github.com/mmistakes/minimal-mistakes/issues/476)
+
 ## [3.4.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.4)
 
 ### Enhancements

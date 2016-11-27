@@ -4,6 +4,7 @@ tags:
   - about
   - Muhammad Nabeel Arif 
   - nabeelarif
+layout: single
 modified: 2016-03-14T20:53:07.573882-04:00
 ---
 

@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en_US"
-title                    : "Nabeel's Log"
+title                    : "Nabeel Writes"
 title_separator          : "-"
 name                     : "Muhammad Nabeel Arif"
 description              : "An amazing website."
@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Muhammad Nabeel Arif"
-  avatar           : "bio-photo.jpg"
+  avatar           : "/images/default-thumb.png"
   bio              : "Principal Software Engineer"
   location         : "Planet Earth"
   email            :

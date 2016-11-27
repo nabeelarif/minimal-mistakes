@@ -24,5 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 0.12"
   spec.add_runtime_dependency "jekyll-gist", "~> 1.4"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.8"
+  spec.add_runtime_dependency  "jekyll-archives"
   spec.add_runtime_dependency "jemoji", "~> 0.7"
 end

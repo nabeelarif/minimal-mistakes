@@ -1,6 +1,6 @@
 ---
-title: "Downgrade from XCode 8 to XCode 7"
-excerpt: "Downgrade from XCode 8 to XCode 7"
+title: "Downgrade UI Files from XCode 8 to XCode 7"
+excerpt: "Downgrade UI Files from XCode 8 to XCode 7"
 tags: 
 - xcode8
 - xcode7
@@ -11,6 +11,7 @@ categories:
 - Post
 ---
 {% include toc %}
+
 In one of my recent project I developed a module in XCode 8 as I had upgraded to it. Later I came to know that our team is currently working on XCode 7. So if we integrate XCode 8 UI files i.e .storyboard & .xib, the main project will not compile and will show following error.
 
 <figcaption>UI Files of XCode 8 opened in XCode 7</figcaption>
